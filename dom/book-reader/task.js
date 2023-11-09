@@ -10,8 +10,10 @@ for (let i = 0; i < fontSize.length; i++) {
 
     if (fontSize[i].classList.contains('font-size_small')) {
       book.classList.add('book_fs-small');
+      book.classList.remove('book_fs-big');
     } else if (fontSize[i].classList.contains('font-size_big')) {
       book.classList.add('book_fs-big');
+      book.classList.remove('book_fs-small');
     } else {
       book.className = 'book';
     };
